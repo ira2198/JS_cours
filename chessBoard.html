@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chessBoardStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Homework 5</title>
+
+
+</head>
+
+<body>
+
+    <div></div>
+
+    <script>
+        var elementsOnBoard = [
+            [" ", "A", "B", "C", "D", "E", "F", "G", "H", " "],
+            ["1", "&#9814;", "&#9816;", "&#9815;", "&#9813;", "&#9812;", "&#9815;", "&#9816;", "&#9814;", "1"],
+            ["2", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "&#9817;", "2"],
+            ["3", " ", " ", " ", " ", " ", " ", " ", " ", "3"],
+            ["4", " ", " ", " ", " ", " ", " ", " ", " ", "4"],
+            ["5", " ", " ", " ", " ", " ", " ", " ", " ", "5"],
+            ["6", " ", " ", " ", " ", " ", " ", " ", " ", "6"],
+            ["7", "&#9823", "&#9823;", "&#9823;", "&#9823;", "&#9823;", "&#9823;", "&#9823;", "&#9823;", "7"],
+            ["8", "&#9820;", "&#9822;", "&#9821;", "&#9819;", "&#9818;", "&#9821;", "&#9822;", "&#9820;", "8"],
+            [" ", "A", "B", "C", "D", "E", "F", "G", "H", " "]
+        ];
+
+
+        var board = document.querySelector("div");
+
+        var field = document.createElement("table"),
+            tr, td;
+
+        for (var i = 1; i <= 10; i++) {
+            tr = document.createElement("tr");
+            board.append(tr);
+
+            for (var k = 1; k <= 10; k++) {
+                td = document.createElement("td");
+                tr.append(td);
+                td.classList.add("board");
+
+                if (i == 1 || k == 1 || i == 10 || k == 10) {
+                    td.classList.add("position");
+                    if (i == 1 || k == 10) {
+                        td.classList.add("turnOver");
+                    }
+                } else if ((i + k) % 2 == 1) {
+                    td.classList.add("darkCell");
+                } else {
+                    td.classList.add("lightCell");
+                }
+                td.innerHTML = elementsOnBoard[i - 1][k - 1];
+
+            }
+        }
+
+        document.getElementsByTagName("div")[0].append(field);
+    </script>
+
+</body>
+
+</html>

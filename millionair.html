@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Homework 4</title>
+
+
+
+</head>
+
+<body>
+    <script>
+        var userCorrectAnswer = 0;
+        var level_1 = {
+            question: "Как называют период времени, когда солнце в северных широтах не опускается за горизонт?\n",
+            answer_1: "1. Полярная ночь\n",
+            answer_2: "2. Полярный день\n",
+            answer_3: "3. Белые ночи\n",
+            answer_4: "4. Безобразие это называется",
+            correct: 2
+
+        }
+        var level_2 = {
+            question: "Где, если верить пословице, любопытной Варваре нос оторвали?\n",
+            answer_1: "1. На псарне\n",
+            answer_2: "2. За чужой дверью\n",
+            answer_3: "3. Во дворе\n",
+            answer_4: "4. На базаре",
+            correct: 4
+
+        }
+        var level_3 = {
+            question: "Какое астрономическое явление жители Земли могут наблюдать один раз в 76 лет?\n",
+            answer_1: "1. Солнечное затмение\n",
+            answer_2: "2. Звездопад\n",
+            answer_3: "3. Комету Галлея\n",
+            answer_4: "4. Взрыв сверхновой",
+            correct: 3
+
+        }
+        var level_4 = {
+            question: "Что испанцы съедают в новогоднюю полночь с каждым ударом часов?\n",
+            answer_1: "1. Виноградинку\n",
+            answer_2: "2. Оливку\n",
+            answer_3: "3. Кусочек сыра\n",
+            answer_4: "4. Записку с желанием",
+            correct: 1
+
+        }
+        var level_5 = {
+            question: "	Разновидностью какого минерала является горный хрусталь?\n",
+            answer_1: "1. Стекла\n",
+            answer_2: "2. Алмаза\n",
+            answer_3: "3. Андалузита\n",
+            answer_4: "4. Кварца",
+            correct: 4
+        }
+
+        game(level_1);
+        game(level_2);
+        game(level_3);
+        game(level_4);
+        game(level_5);
+
+        function game(level) {
+            var userAnswer = +prompt(level.question + "выберете вариант ответа\n" + level.answer_1 + level.answer_2 + level.answer_3 + level.answer_4);
+            if (userAnswer == level.correct) {
+                userCorrectAnswer += 100;
+                alert("Поздравляю вы ответили верно, и заработали " + userCorrectAnswer + " тысяч рублей");
+            } else {
+                alert("Увы, это не правильный ответ, \n правильный ответ №  " + level.correct + " \n Вы теряете свой выигрыш");
+                userCorrectAnswer = 0;
+            }
+        }
+        alert("Ваш выигрыш составил " + (userCorrectAnswer) * 1000 + "  рублей");
+    </script>
+
+
+
+</body>
+
+</html>

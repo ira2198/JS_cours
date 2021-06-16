@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+.board {
+  background-color: #d6c9b7;
+  width: 50px;
+  height: 50px;
+  color: #221404;
+  text-align: center;
+}
+
+.position {
+  vertical-align: middle;
+}
+
+.darkCell {
+  border: 1px solid #221404;
+  background-color: #614b2e;
+  font-size: 40px;
+}
+
+.lightCell {
+  border: 1px solid #221404;
+  background-color: #faf5e8;
+  font-size: 40px;
+}
+
+.turnOver {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=chessBoardStyle.css.map */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Homework 6_1</title>
+
+
+</head>
+
+<body>
+    <div>
+        <img src="img_smoll/img_1_sm.jpg" alt="jpg" id="i_1">
+        <img src="img_smoll/img_2_sm.jpg" alt="jpg" id="i_2">
+        <img src="img_smoll/img_3_sm.jpg" alt="jpg" id="i_3">
+    </div>
+    <div id="bigPhoto"> </div>
+
+    <script>
+        window.onload = function() {
+            var arrSmollImg = document.getElementsByTagName("img");
+
+            for (var i = 0; i < arrSmollImg.length; i++) {
+                arrSmollImg[i].onclick = showBigPhoto;
+            }
+        }
+
+        function showBigPhoto(e) {
+            var photo = document.getElementById("bigPhoto");
+            photo.innerHTML = " ";
+            var imgPush = e.target;
+            var nameConvert = imgPush.id.split("_");
+            var src = "img_big/img_" + nameConvert[1] + ".jpg";
+
+            var bigElement = document.createElement("img");
+            bigElement.src = src;
+            bigPhoto.appendChild(bigElement).style.display = "block";
+
+
+            bigElement.onerror = function() {
+                bigPhoto.removeChild(bigElement);
+                alert("Ошибка! файл не обнаружен");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

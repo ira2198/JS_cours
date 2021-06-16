@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+.board {
+    background-color: rgb(214, 201, 183);
+    width: 50px;
+    height: 50px;
+    color: rgb(34, 20, 4);
+    text-align: center;
+}
+
+.position {
+    vertical-align: middle;
+}
+
+.darkCell {
+    border: 1px solid rgb(34, 20, 4);
+    background-color: rgb(97, 75, 46);
+    font-size: 40px;
+}
+
+.lightCell {
+    border: 1px solid rgb(34, 20, 4);
+    background-color: rgb(250, 245, 232);
+    font-size: 40px;
+}
+
+.turnOver {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Homework 3</title>
+
+
+
+</head>
+
+<body>
+
+    <div class="heading">1. вывести все простые числа от 0 до 100
+
+    </div>
+    <script>
+        var i = 2;
+
+        while (i <= 100) {
+
+            var j = 2;
+            while (j <= i) {
+                if ((i % j == 0)) {
+                    break;
+                }
+                j++
+            }
+            if (j == i) {
+                document.write(i + ", ");
+            }
+
+            i++;
+        }
+    </script>
+
+
+
+    <div class="heading">2-3. Стоимость корзины</div>
+    <script>
+        var goods = [{
+            title: "Товар 1",
+            price: 100,
+            quantity: 5,
+            made: "Виталий",
+        }, {
+            title: "Товар 2",
+            price: 200,
+            quantity: 3,
+            made: "Артем"
+
+        }, {
+            title: "Товар 3",
+            price: 300,
+            quantity: 9,
+            made: "Наталья"
+        }];
+
+
+
+        function countBasketPrice(mas) {
+            var priceTitle = 0;
+            for (var i = 0; i < goods.length; i++) {
+                priceTitle = priceTitle + (goods[i].price * goods[i].quantity);
+            }
+
+            return priceTitle;
+
+        }
+        document.write("Сумма Ваших покупок = " + countBasketPrice(goods));
+    </script>
+
+
+
+
+
+    <div class="heading"> 4. Вывести числа от 0 до 9 </div>
+    <script>
+        for (var i = 0; i <= 9; document.write(i++ + "  "));
+    </script>
+
+
+
+
+
+
+    <div class="heading"> 5. Пирамидка в консоли </div>
+
+    <script>
+        var piramid = " ";
+        for (var i = 0; i < 20; i++) {
+            piramid += "x";
+            console.log(piramid);
+        }
+    </script>
+
+</body>
+
+</html>
