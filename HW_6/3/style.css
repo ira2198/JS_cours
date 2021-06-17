@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.windImg {
+  width: 620px;
+  height: 450px;
+  border: 2px dotted #17a851;
+  border-radius: 18px;
+}
+
+.windImg img {
+  border-radius: 18px;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.button {
+  font-weight: bold;
+  background-color: #17a851;
+  margin: 0 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

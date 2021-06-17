@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.windImg {
+    width: 620px;
+    height: 450px;
+    border: 2px dotted rgb(23, 168, 81);
+    border-radius: 18px;
+    img {
+        border-radius: 18px;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+}
+
+.button {
+    font-weight: bold;
+    background-color: rgb(23, 168, 81);
+    margin: 0 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
