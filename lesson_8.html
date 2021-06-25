@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Homework_8</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading"> if (!("a" in window)) <br> { var a = 1; }<br> alert(a);
+        </div>
+        <div class="text"> результат "а не определена"/ переменная а глобальная и является частью голобального объекта window
+        </div>
+        <div class="heading"> var b = function a(x) { <br> x && a(--x); <br> }; <br> alert(a);
+        </div>
+        <div class="text"> Здесь ошибка, переменной b присваивается функция с именем а и параметром х <br> 'а' в теле функции не определена
+        </div>
+        <div class="heading">
+            function a(x) {<br> return x * 2;<br> }
+            <br> var a;<br> alert(a);
+        </div>
+        <div class="text"> Здесь не верно объявленая функция, снова выдаст ошибку
+        </div>
+        <div class="heading"> function b(x, y, a) {<br> arguments[2] = 10;<br> alert(a);
+            <br> }
+            <br> b(1, 2, 3);
+        </div>
+        <div class="text"> браузер выдаст 10. <br> - в функцию b передаем аргументы 1,2,3. в теле функции из массмва этих аргументов берем элемент с порядковым номером 2 и меняем его значение с 3х на 10. после чего этот аргумент выводим.
+        </div>
+        <div class="heading"> function a() {<br> alert(this);
+            <br> }
+            <br> a.call(null);
+        </div>
+        <div class="text"> выдаст "null" в качестве объекта window <br> т.к с помощью метода call для this будет присвоен null
+        </div>
+    </div>
+
+    <script>
+        // if (!("a" in window)) {
+        //     var a = 1;
+        // }
+        // alert(a);
+
+        // var b = function a(x) {
+        //     x && a(--x);
+        // };
+        // alert(a);
+
+        // function a(x) {
+        //     return x * 2;
+        // }
+        // var a;
+        // alert(a);
+
+
+
+        function a() {
+            console.log(this);
+        }
+        a.call(null);
+    </script>
+</body>
+
+</html>
