@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/60354fef00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="inStyle.css">
+    <script defer src="script.js"></script>
 
 </head>
 
@@ -19,13 +19,13 @@
 
     <div class="header ">
         <div class="menu container">
-            <div class="l">
+            <div class="menu__l">
                 <img src="img/logoHead.svg" alt="logo" class="logo">
                 <form action="#" class="hidden">
                     <img src="img/searchHead.svg" alt="search"><input type="text" class="open">
                 </form>
             </div>
-            <nav class="r">
+            <nav class="menu__r">
                 <a href="#"><img src="img/menuHead.svg" alt="menu" class="menu__link icon"></a>
                 <a href="#"><img src="img/profileHead.svg" alt="profile" class="icon medi-icon"></a>
                 <a href="#"><img src="img/basketHead.svg" alt="basket" class="icon medi-icon"></a>
@@ -85,19 +85,7 @@
                 </li>
             </ul>
         </nav>
-        <!-- <script>'use strict';
 
-            let top__shadow = document.querySelector('.top__shadow');
-            let menu__link = document.querySelector('.menu__link');
-            let menu__top = document.querySelector('.menu__top');
-
-            function toggleMenu() {
-                top__shadow.classList.toggle('hidden');
-            }
-
-            menu__link.addEventListener('click', toggleMenu);
-            menu__top.addEventListener('click', toggleMenu);
-        </script> -->
     </div>
     <main class="container">
         <nav class="catalog">
@@ -143,72 +131,7 @@
         <p class="Fetured__text">Shop for items based on what we featured in this week</p>
 
         <div class="product__cards">
-            <section class="card">
-                <div class="cards__shadow">
-                    <button class="cards__hover-basked"><img src="img/basketCard.svg" alt="based">
-                        <span class="basketCard-text">Add to Cart</span>
-                    </button>
-                </div>
-                <img src="img/1__card.jpg" alt="product">
-                <h4 class="card__header">ELLERY X M'O CAPSULE</h4>
-                <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <div class="price red">$52.00</div>
-            </section>
-            <section class="card">
-                <div class="cards__shadow">
-                    <button class="cards__hover-basked"><img src="img/basketCard.svg" alt="based">
-                        <span class="basketCard-text">Add to Cart</span>
-                    </button>
-                </div>
-                <div class="card-background"><img src="img/2__card.png" alt="product"></div>
-                <h4 class="card__header">ELLERY X M'O CAPSULE</h4>
-                <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="price red">$52.00</p>
-            </section>
-            <section class="card">
-                <div class="cards__shadow">
-                    <button class="cards__hover-basked"><img src="img/basketCard.svg" alt="based">
-                        <span class="basketCard-text">Add to Cart</span>
-                    </button>
-                </div>
-                <img src="img/3__card.jpg" alt="product">
-                <h4 class="card__header">ELLERY X M'O CAPSULE</h4>
-                <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="price red">$52.00</p>
-            </section>
-            <section class="card">
-                <div class="cards__shadow">
-                    <button class="cards__hover-basked"><img src="img/basketCard.svg" alt="based">
-                        <span class="basketCard-text">Add to Cart</span>
-                    </button>
-                </div>
-                <img src="img/4__card.jpg" alt="product">
-                <h4 class="card__header">ELLERY X M'O CAPSULE</h4>
-                <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="price red">$52.00</p>
-            </section>
-            <section class="card">
-                <div class="cards__shadow">
-                    <button class="cards__hover-basked"><img src="img/basketCard.svg" alt="based">
-                        <span class="basketCard-text">Add to Cart</span>
-                    </button>
-                </div>
-                <img src="img/5__card.jpg" alt="product">
-                <h4 class="card__header">ELLERY X M'O CAPSULE</h4>
-                <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="price red">$52.00</p>
-            </section>
-            <section class="card">
-                <div class="cards__shadow">
-                    <button class="cards__hover-basked"><img src="img/basketCard.svg" alt="based">
-                        <span class="basketCard-text">Add to Cart</span>
-                    </button>
-                </div>
-                <img src="img/6__card.jpg" alt="product">
-                <h4 class="card__header">ELLERY X M'O CAPSULE</h4>
-                <p class="card__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="price red">$52.00</p>
-            </section>
+
         </div>
         <div class="Browse"><button class="Browse__button">Browse All Product</button>
         </div>
