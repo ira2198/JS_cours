@@ -1,16 +1,11 @@
 const goods = [{
-        button: "Add to Cart",
-        imgButton: "img/basketCard.svg",
+
         image: "img/1__card.jpg",
         title: "ELLERY X M'O CAPSULE",
         definition: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
         price: "$52.00"
-
-
     },
     {
-        button: "Add to Cart",
-        imgButton: "img/basketCard.svg",
         image: "img/2__card.png",
         title: "ELLERY X M'O CAPSULE",
         definition: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
@@ -18,40 +13,28 @@ const goods = [{
 
     },
     {
-        button: "Add to Cart",
-        imgButton: "img/basketCard.svg",
         image: "img/3__card.jpg",
         title: "ELLERY X M'O CAPSULE",
         definition: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
         price: "$52.00"
-
     },
     {
-        button: "Add to Cart",
-        imgButton: "img/basketCard.svg",
         image: "img/4__card.jpg",
         title: "ELLERY X M'O CAPSULE",
         definition: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
         price: "$52.00"
-
     },
     {
-        button: "Add to Cart",
-        imgButton: "img/basketCard.svg",
         image: "img/5__card.jpg",
         title: "ELLERY X M'O CAPSULE",
         definition: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
         price: "$52.00"
-
     },
     {
-        button: "Add to Cart",
-        imgButton: "img/basketCard.svg",
         image: "img/6__card.jpg",
         title: "ELLERY X M'O CAPSULE",
         definition: "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
         price: "$52.00"
-
     },
 
 ];
@@ -79,3 +62,5 @@ const renderGoodsList = (list = goods) => {
 
 
 renderGoodsList();
+
+//=====================================================================================
